@@ -7,7 +7,7 @@ CC		= avr-gcc
 CFLAGS	= -mmcu=$(MCU) -DF_CPU=$(F_CPU) -Os -Wall -Wextra -std=c11
 
 HOST_CC		= gcc
-HOST_FLAGS	= -Wall -Wextra -Werror -std=c11 -g -Ilib
+HOST_CFLAGS	= -Wall -Wextra -Werror -std=c11 -g -Ilib
 
 all: $(TARGET).hex
 

@@ -9,7 +9,7 @@ static void test_new_buffer_is_empty(void) {
     rb_init(&rb);
     uint8_t byte;
     bool got = rb_get(&rb, &byte);
-    assert(!got)
+    assert(!got);
 }
 
 int main(void) {
